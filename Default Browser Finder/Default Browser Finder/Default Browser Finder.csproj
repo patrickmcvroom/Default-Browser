@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Default_Browser_Finder</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="asas\**" />
+    <EmbeddedResource Remove="asas\**" />
+    <None Remove="asas\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Win32.Registry" Version="5.0.0" />
+  </ItemGroup>
+
+</Project>
